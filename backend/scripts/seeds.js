@@ -12,7 +12,7 @@ const MONGODB_URI = "mongodb://localhost:27017";
 mongoose.connect(MONGODB_URI);
 
 async function insertRecords(){
-	const randomName = faker.name.firstName; // Rowan Nikolaus
+	const randomName = faker.internet.userName(); // Rowan Nikolaus
 	const randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
 
     var username = randomName;
