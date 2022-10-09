@@ -9,7 +9,8 @@ var Comment = mongoose.model('Comment');
 const { faker } = require('@faker-js/faker');
 
 const MONGODB_URI = "mongodb://localhost:27017";
-mongoose.connect(MONGODB_URI);
+//mongoose.connect(MONGODB_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 async function insertRecords(){
 	const randomName = faker.random.alphaNumeric(7); // Rowan Nikolaus
