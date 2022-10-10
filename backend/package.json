@@ -33,10 +33,10 @@
     "passport-local": "1.0.0",
     "request": "2.69.0",
     "slug": "0.9.1",
-    "underscore": "1.8.3"
+    "underscore": "1.8.3",
+    "@faker-js/faker": "^7.5.0"
   },
   "devDependencies": {
-    "@faker-js/faker": "^7.5.0",
     "newman": "^3.8.2",
     "nodemon": "^1.11.0"
   }
