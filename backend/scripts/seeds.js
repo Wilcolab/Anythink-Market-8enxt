@@ -47,4 +47,4 @@ for (let i = 0; i < 100; i++) {
 	promises.push(insertRecords());
 }
 
-Promise.all(promises).then((res) => mongoose.disconnect());
+await Promise.all(promises).then((res) => mongoose.disconnect());
